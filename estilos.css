@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/fondo.jpg');
+    background-image: url('images/fondo.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-weight: 500;
@@ -51,3 +51,30 @@ body {
     font-style: italic;
     color: #7a5c4f;
 }
+
+@media (max-width: 768px) {
+    .letter-title {
+        font-size: 1rem;
+    }
+    .letter-container {
+        width: 90%;
+    }
+    
+    .letter {
+        font-size: 14px; /* Tamaño más pequeño para pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .letter-title {
+        font-size: 1rem;
+    }
+
+    .letter-container {
+        width: 90%;
+    }
+
+    .letter {
+        font-size: 12px; /* Tamaño más pequeño para pantallas más pequeñas */
+    }
+  }
