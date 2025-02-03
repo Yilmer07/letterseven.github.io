@@ -9,7 +9,7 @@ require '../controller/PHPMailer/PHPMailer.php';
 require '../controller/PHPMailer/SMTP.php';
 
 //El contact debe tener la propiedad name, sino generara error
-$nombre =  'Diana';
+$nombre =  $_POST['nombre'];
 $email =   'yilmer.chaponan93@gmail.com';
 $mensaje = 'La carta fue leída.';
 

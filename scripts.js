@@ -5,11 +5,14 @@ window.onload = function() {
 
     //
     async function sendEmailNotification(){
-
+      let dataContact = new FormData();
+      dataContact.append('nombre', 'Diana');
+      dataContact.append('property', 'value');
         const response = await fetch(
             'controller/envioMail.php',
             {
-                method : 'POST'
+                method : 'POST',
+                body : dataContact
             }
         );
         const data = await response.json();
