@@ -7,7 +7,7 @@ window.onload = function() {
     async function sendEmailNotification(){
 
         const response = await fetch(
-            '/controller/envioMail.php',
+            'controller/envioMail.php',
             {
                 method : 'POST'
             }
